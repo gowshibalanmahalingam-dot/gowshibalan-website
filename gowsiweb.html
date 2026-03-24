@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gowshibalan | Personal Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(-45deg, #0f172a, #1e293b, #2563eb, #0f172a);
+      background-size: 400% 400%;
+      animation: bgMove 10s ease infinite;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      animation: cardPop 1.2s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 12px 40px rgba(56, 189, 248, 0.35);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 42px;
+      font-weight: bold;
+      margin: 0 auto 20px;
+      color: #0f172a;
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      animation: fadeUp 1s ease;
+    }
+
+    p {
+      font-size: 16px;
+      color: #cbd5e1;
+      margin-bottom: 15px;
+      line-height: 1.6;
+      animation: fadeUp 1.4s ease;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+      animation: glow 2s infinite alternate;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      transform: scale(1.08);
+    }
+
+    .socials {
+      margin-top: 20px;
+      animation: fadeUp 1.8s ease;
+    }
+
+    .socials a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: #38bdf8;
+      letter-spacing: 1px;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes cardPop {
+      0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+      }
+      to {
+        box-shadow: 0 0 25px rgba(56, 189, 248, 0.9);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="profile-img">G</div>
+    <h1>Gowshibalan</h1>
+    <p>Hello! I'm Gowshibalan. Welcome to my personal profile webpage.</p>
+    <p>I like technology, design, and creating cool things on the web.</p>
+    <a href="#" class="btn">Contact Me</a>
+
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
